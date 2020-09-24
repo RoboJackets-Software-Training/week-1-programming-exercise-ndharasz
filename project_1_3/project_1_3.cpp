@@ -85,7 +85,7 @@ int main() {
     y.push_back(val);
   }
 
-  printVector("y", y);
+  printVector("", y);
 
   // =========== END ===========
 
