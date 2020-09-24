@@ -20,7 +20,10 @@ std::vector<double> readInVector(std::string s) {
 }
 
 void printVector(std::string name, std::vector<double> v) {
-  std::cout << name << ": {";
+  if (name != "") {
+    std::cout << name << ": ";
+  }
+  std::cout << "{";
   for (int i = 0; i < v.size(); i++) {
     std::cout << v[i];
     if (i < v.size() - 1) {
