@@ -22,12 +22,12 @@ std::vector<double> readInVector(std::string s) {
 void printVector(std::string name, std::vector<double> v) {
   std::cout << name << ": {";
   for (int i = 0; i < v.size(); i++) {
-    std::cout << " " << v[i];
+    std::cout << v[i];
     if (i < v.size() - 1) {
-      std::cout << ",";
+      std::cout << ", ";
     }
   }
-  std::cout << " }" << std::endl;
+  std::cout << "}" << std::endl;
 }
 
 int main() {
